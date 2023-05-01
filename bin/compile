@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+build_dir=$1
+cache_dir=$2
+env_dir=$3
+bin_dir=$(cd "$(dirname $0)"; pwd)
+
+for import in "$(dirname ${bin_dir})/lib/"*; do
+  source "$import"
+done
+
+mkdir -p $build_dir/public/assets
+mkdir -p $build_dir/public/packs
+
+download_file assets/manifest-$SOURCE_VERSION.json assets/.sprockets-manifest-$SOURCE_VERSION.json
+download_file packs/manifest.json packs/manifest.json

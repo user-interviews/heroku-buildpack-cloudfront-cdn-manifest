@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+echo "CloudFront CDN manifest in $1"
+echo $pwd
