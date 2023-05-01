@@ -8,4 +8,4 @@ https://blog.arkency.com/dont-waste-your-time-on-assets-compilation-on-heroku/
 > Modified:
 https://github.com/arkency/heroku-buildpack-cdn-manifest
 
-To use CloudFront for asset gathering
+To use CloudFront for asset gathering.
