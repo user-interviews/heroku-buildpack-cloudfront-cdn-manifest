@@ -8,7 +8,5 @@ https://blog.arkency.com/dont-waste-your-time-on-assets-compilation-on-heroku/
 > Modified:
 https://github.com/arkency/heroku-buildpack-cdn-manifest
 
-To use CloudFront for asset gathering
-
 This is also specifically tied to our asset host at 
 assets.userinterviews.com
