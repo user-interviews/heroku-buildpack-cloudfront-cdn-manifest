@@ -13,11 +13,7 @@ mkdir -p $build_dir/public/assets
 mkdir -p $build_dir/public/packs
 
 # Sprockets
-# Trying original way again:
-download_file assets/manifest-$SOURCE_VERSION.json || \
-  download_file assets/manifest-latest.json
-# Not working, but seemed better
-# download_file assets/.sprockets-manifest-$SOURCE_VERSION.json assets/.sprockets-manifest-$SOURCE_VERSION.json
+download_file assets/manifest-latest.json assets/manifest-latest.json
 
 # Webpacker
 download_file packs/manifest.json packs/manifest.json
