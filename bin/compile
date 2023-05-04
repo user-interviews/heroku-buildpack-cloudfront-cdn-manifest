@@ -9,8 +9,8 @@ for import in "$(dirname ${bin_dir})/lib/"*; do
   source "$import"
 done
 
-mkdir -p $build_dir/public/assets
-mkdir -p $build_dir/public/packs
+mkdir -p $build_dir/assets-$SOURCE_VERSION/public/assets
+mkdir -p $build_dir/assets-$SOURCE_VERSION/public/packs
 
 # Sprockets
 download_file assets/manifest-latest.json assets/manifest-latest.json
