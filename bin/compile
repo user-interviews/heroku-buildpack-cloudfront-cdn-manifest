@@ -10,7 +10,7 @@ for import in "$(dirname ${bin_dir})/lib/"*; do
 done
 
 mkdir -p $build_dir/assets-$SOURCE_VERSION/public/assets
-mkdir -p $build_dir/assets-$SOURCE_VERSION/public/packs
+mkdir -p $build_dir/assets-$SOURCE_VERSION/public/packsq
 
 # Sprockets
 download_file assets/manifest-latest.json assets/manifest-latest.json
