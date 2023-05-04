@@ -12,8 +12,5 @@ done
 mkdir -p $build_dir/public/assets
 mkdir -p $build_dir/public/packs
 
-# Sprockets
-download_file assets/manifest-latest.json assets/manifest-latest.json
-
-# Webpacker
-download_file packs/manifest.json packs/manifest.json
+download_file assets/sprockets-manifest-$SOURCE_VERSION.json assets/manifest-latest.json
+download_file assets/webpack-manifest-$SOURCE_VERSION.json packs/manifest.json
