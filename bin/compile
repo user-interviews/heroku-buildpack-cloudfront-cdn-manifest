@@ -9,8 +9,6 @@ for import in "$(dirname ${bin_dir})/lib/"*; do
   source "$import"
 done
 
-mkdir -p $build_dir/public/assets
-mkdir -p $build_dir/public/packs
+mkdir -p $build_dir/public/
 
-download_file precompiled-assets/manifests/sprockets-manifest-$SOURCE_VERSION.json assets/manifest-latest.json
-download_file precompiled-assets/manifests/webpack-manifest-$SOURCE_VERSION.json packs/manifest.json
+download_file precompiled-assets/$SOURCE_VERSION.zip precompiled_assets.zip
