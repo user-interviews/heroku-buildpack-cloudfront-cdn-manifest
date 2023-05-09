@@ -3,7 +3,7 @@
 download_file () {
   local remote_path=$1
   local local_path=$2
-  local file_url="https://assets.userinterviews.com/${remote_path}"
+  local file_url="https://userinterviews-staging-assets.s3.amazonaws.com/${remote_path}"
 
   # Verify content type of remote file
   if curl -s -I $file_url | grep -iq "application/zip,application/octet-stream"; then
